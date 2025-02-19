@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Jogatta - Organize Suas Partidas de Vôlei</title>
+
+    <!-- Fonte moderna Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <!--======================== HEADER ==========================-->
+    <header class="header">
+        <div class="container header-container">
+            <h1 class="logo">JOGATTA</h1>
+            <nav class="nav">
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#hero" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+                    <!-- Novo link no menu para a seção O Gestor -->
+                    <li class="nav-item"><a href="#gestor" class="nav-link">O Gestor</a></li>
+                    <li class="nav-item"><a href="#download" class="nav-link">Baixar</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--======================== HERO ==========================-->
+    <section id="hero" class="hero observe-fade">
+        <video class="video-bg" src="videos/video1.mp4" autoplay muted loop playsinline></video>
+        <div class="hero-overlay"></div>
+        <div class="hero-wave"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">
+                    <span class="gradient-text">Organize</span> partidas de vôlei<br />
+                    de forma simples e divertida
+                </h2>
+                <p class="hero-subtitle">
+                    Junte-se a jogadores apaixonados por vôlei e torne seus jogos mais organizados com o
+                    <strong>Jogatta</strong>.
+                </p>
+                <a href="#download" class="btn hero-btn">Baixar APK</a>
+            </div>
+        </div>
+    </section>
+
+    <!--======================== SOBRE ==========================-->
+    <section id="sobre" class="sobre section observe-fade">
+        <img class="video-bg-sobre" src="videos/girlvolei.jpeg" alt="Jogadora de vôlei feliz" />
+        <div class="section-overlay"></div>
+        <div class="section-wave-top"></div>
+
+        <div class="container">
+            <h2 class="section-title">O que é o Jogatta?</h2>
+            <p class="section-description">
+                O <strong>Jogatta</strong> é um aplicativo criado para conectar jogadores de vôlei, organizar partidas
+                e promover interação social de maneira leve e divertida. Balanceie times, veja estatísticas e conquiste
+                insígnias exclusivas.
+            </p>
+        </div>
+    </section>
+
+    <!--======================== FUNCIONALIDADES ==========================-->
+    <section id="funcionalidades" class="funcionalidades section observe-fade">
+        <div class="container">
+            <h2 class="section-title">Funcionalidades</h2>
+            <p class="section-description_2">Veja o que você pode fazer com o Jogatta</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-friends feature-icon"></i>
+                    <h3 class="feature-title">Conexão entre Jogadores</h3>
+                    <p class="feature-text">
+                        Encontre parceiros de jogo em sua região e monte equipes equilibradas.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-alt feature-icon"></i>
+                    <h3 class="feature-title">Organização de Partidas</h3>
+                    <p class="feature-text">
+                        Crie e gerencie seus jogos de forma rápida, definindo data, local e participantes.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-bar feature-icon"></i>
+                    <h3 class="feature-title">Estatísticas e Badges</h3>
+                    <p class="feature-text">
+                        Monitore seu desempenho, conquiste insígnias exclusivas e compartilhe seus resultados.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-wave-bottom"></div>
+    </section>
+
+    <!--======================== O GESTOR (NOVA SEÇÃO) ==========================-->
+    <section id="gestor" class="gestor section observe-fade">
+        <div class="section-wave-top"></div>
+        <div class="container gestor-container">
+            <h2 class="section-title">O Gestor</h2>
+            <p class="section-description_2">
+                Criado para atender os <strong>donos de quadra</strong>, o Gestor oferece um painel dedicado para
+                gerenciar
+                reservas, organizar pagamentos e ter controle total sobre a sua quadra. Tudo de maneira
+                prática e integrada ao Jogatta.
+            </p>
+            <div class="gestor-content">
+                <!-- <img src="imagens/gestor-demo.png" alt="Demonstração do aplicativo Gestor" class="gestor-image" /> -->
+                <div class="gestor-text">
+                    <h3>Gerencie sua quadra com eficiência</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Controle de reservas e horários</li>
+                        <li><i class="fas fa-check-circle"></i> Visualização de estatísticas e uso da quadra</li>
+                        <li><i class="fas fa-check-circle"></i> Organização de pagamentos e confirmações</li>
+                    </ul>
+                    <a href="#download" class="btn btn-gestor">Quero conhecer o Gestor</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-wave-bottom"></div>
+    </section>
+
+    <!--======================== DOWNLOAD ==========================-->
+    <section id="download" class="download section observe-fade">
+        <div class="container">
+            <h2 class="section-title">Baixe agora o Jogatta</h2>
+            <p class="section-description_2">
+                Estamos lançando a versão inicial do <strong>Jogatta</strong> e também o módulo <strong>O
+                    Gestor</strong>.
+                Seja um dos primeiros a experimentar!
+            </p>
+            <p class="fomo-text">
+                <em>Em breve na <strong>Play Store</strong> e <strong>App Store</strong>. Garanta já seu acesso
+                    antecipado!</em>
+            </p>
+
+            <!-- Botões para baixar APK -->
+            <div class="download-buttons">
+                <a href="downloads/jogatta.apk" download class="btn btn-primary">Baixar Jogatta</a>
+                <a href="downloads/gestor.apk" download class="btn btn-secondary">Baixar O Gestor</a>
+            </div>
+        </div>
+    </section>
+
+    <!--======================== CONTATO ==========================-->
+    <section id="contato" class="contato section observe-fade">
+        <div class="section-wave-top"></div>
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p class="section-description_2">
+                Tem dúvidas ou sugestões? Fale conosco pelo WhatsApp!
+            </p>
+            <a href="https://wa.me/5598982832657" target="_blank" rel="noopener noreferrer" class="btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Fale Conosco
+            </a>
+        </div>
+    </section>
+
+    <!--======================== FOOTER ==========================-->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="social-links">
+                <!-- Ícones de redes sociais (links fictícios) -->
+                <a href="javascript:void(0);" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="javascript:void(0);" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="javascript:void(0);" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="footer-text">&copy; 2025 Jogatta. Todos os direitos reservados.</p>
+            <p class="footer-text legal-text">
+                Em conformidade com a Lei Geral de Proteção de Dados (Lei n. 13.709/2018) e demais normativas
+                aplicáveis.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
