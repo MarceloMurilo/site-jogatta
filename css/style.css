@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 
+/* Novas variáveis + variáveis antigas */
 :root {
+    /* Variáveis antigas (usadas no layout) */
     --color-orange: #ff6f00;
     --color-orange-light: #ff8c00;
     --color-blue: #1976d2;
@@ -18,6 +20,13 @@
     --color-text: #333;
     --color-text-light: #666;
     --color-gray-light: #f0f0f0;
+
+    /* Variáveis novas (se quiser aproveitar em outras partes) */
+    --primary: #FF6B35;
+    --secondary: #004E89;
+    --accent: #FFD23F;
+    --background: #F8F9FA;
+    --text: #2D3047;
 }
 
 /**************************************************************
