@@ -90,7 +90,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Ícone hamburguer */
+/* Ícone hambúrguer */
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -326,7 +326,7 @@ body {
     left: 0;
     width: 100%;
     height: 80px;
-    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTYwMCcgaGVpZ2h0PSc4MCcgdmlld0JveD0nMCAwIDE2MDAgODAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nd2hpdGUnIGQ9J00wLDBoMTYwMHY0M0MzMjIuOCw1NS4xLDgxNS45LDgwLDAsODBDMCw4MCwwLDM1LjgsMCwwQzAsMzUuOCwwLDAsMCwwek0wLDQwJy8+PC9zdmc+");
+    background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTYwMCcgaGVpZ2h0PSc4MCcgdmlld0JveD0nMCAwIDE2MDAgODAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nd2hpdGUnIGQ9J00wLDBoMTYwMHY0M0MzMjIuOCw1NS4xLDgxNS45LDgwLDAsODBjMCw4MCwwLDM1LjgsMCwwQzAsMzUuOCwwLDAsMCwweiIvPjwvc3ZnPg==");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -643,4 +643,72 @@ body {
     .section-title {
         font-size: 1.5rem;
     }
+}
+
+/**************************************************************
+ * FORMULÁRIO DE CADASTRO
+ **************************************************************/
+/* Ajusta o form, inputs e botão para ficarem mais harmoniosos */
+.cadastro-form {
+    max-width: 400px;
+    margin: 2rem auto 0 auto;
+    /* Centraliza no container */
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    /* Mantém o label/input alinhados à esquerda */
+}
+
+.input-block {
+    margin-bottom: 1.5rem;
+}
+
+.input-block label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.input-block input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-block input:focus {
+    outline: none;
+    border-color: var(--color-blue);
+}
+
+/* Ajusta o botão de "Cadastrar" pra combinar com o resto */
+.cadastro-form .btn-primary {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Estiliza a mensagem de resultado (erro/sucesso) */
+.register-result {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Opcional: estilizar a seção final do APK */
+.apk-download-section {
+    margin-top: 2rem;
+    text-align: center;
 }

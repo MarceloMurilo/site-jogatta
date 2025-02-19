@@ -5,25 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogatta - Cadastro</title>
-    <!-- Fonte, CSS principal, etc. (opcional, se quiser repetir do index.html) -->
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <!-- Cabeçalho opcional (ou pode reutilizar com includes, se tiver) -->
+    <!-- Cabeçalho -->
     <header class="header">
         <div class="container header-container">
             <h1 class="logo">JOGATTA</h1>
-            <!-- Se quiser, pode repetir o menu ou apenas um link de volta para index.html -->
+
+            <!-- Se quiser também o menu hamburguer -->
             <nav class="nav">
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="cadastro.html" class="nav-link active">Cadastro</a></li>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="nav-link active">Cadastro</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Seção de cadastro com animação observe-fade -->
     <section id="cadastro" class="section observe-fade">
         <div class="container">
             <h2 class="section-title">Crie sua Conta</h2>
@@ -64,21 +76,28 @@
             <!-- Área para exibir mensagens de sucesso/erro -->
             <div id="registerResult" class="register-result"></div>
 
-            <!-- Opcional: link para baixar APK após cadastro -->
+            <!-- Link para baixar o APK após cadastro -->
             <div class="apk-download-section" style="margin-top: 20px;">
-                <p>Já fez o cadastro? <a href="downloads/jogatta.apk" download>Baixe o APK</a> e faça login.</p>
+                <p>
+                    Já fez o cadastro?
+                    <a href="downloads/jogatta.apk" download>Baixe o APK</a>
+                    e faça login.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé (opcional) -->
+    <!-- Rodapé -->
     <footer class="footer">
         <div class="container footer-container">
             <p class="footer-text">&copy; 2025 Jogatta. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <!-- Script específico para cadastro -->
+    <!-- Mesmo script de IntersectionObserver e menu -->
+    <script src="js/script.js"></script>
+
+    <!-- Script específico do cadastro -->
     <script src="js/cadastro.js"></script>
 </body>
 
