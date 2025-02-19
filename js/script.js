@@ -1,14 +1,16 @@
+// js/script.js
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Jogatta site está funcionando!');
 
-  // Seleciona o botão hamburguer e o menu
+  // Seleciona o botão hambúrguer e o menu
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
 
-  // Evento de clique no botão hamburguer
+  // Evento de clique no botão hambúrguer
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
-      // Anima as barras do hamburguer
+      // Anima as barras do hambúrguer
       navToggle.classList.toggle('open');
       // Abre/fecha o menu
       navMenu.classList.toggle('open');
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
-          observerInstance.unobserve(entry.target); // anima só uma vez
+          observerInstance.unobserve(entry.target); // anima apenas uma vez
         }
       });
     },
